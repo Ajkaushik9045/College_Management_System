@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CR Attendance"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalStartAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalTakeAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalNsoStudent"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalAttendanceView2"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalStudentView2"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalStudentRecord"
+            android:exported="false" />
+        <activity
+            android:name=".AddBatchResult"
+            android:exported="false" />
+        <activity
+            android:name=".StudentResult"
+            android:exported="false" />
+        <activity
+            android:name=".AddNotes"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".SemesterResultRecord"
+            android:exported="false" />
+        <activity
+            android:name=".SemesterResultAdd"
+            android:exported="false" />
+        <activity
+            android:name=".graphattendance"
+            android:exported="false" />
+        <activity
+            android:name=".Announcement"
+            android:exported="false" />
+        <activity
+            android:name=".ResultRecordShow"
+            android:exported="false" />
+        <activity
+            android:name=".AddResultStart"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteSubject"
+            android:exported="false" />
+        <activity
+            android:name=".ResultRecord"
+            android:exported="false" />
+        <activity
+            android:name=".Sessional"
+            android:exported="false" />
+        <activity
+            android:name=".AddSubject"
+            android:exported="false" />
+        <activity
+            android:name=".BatchResult"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteResult"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateResult"
+            android:exported="false" />
+        <activity
+            android:name=".AddResult"
+            android:exported="false" />
+        <activity
+            android:name=".SemesterResult"
+            android:exported="false" />
+        <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
+            android:name=".Api"
+            android:exported="false"
+            android:label="Insert Student "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Help"
+            android:exported="false"
+            android:label="Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NSOStudents"
+            android:exported="false"
+            android:label="NSO Students"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherStudentView"
+            android:exported="false"
+            android:label="Student View"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentMonthAttendance"
+            android:exported="false"
+            android:label="Student Month Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MonthAttendanceShow"
+            android:exported="false"
+            android:label="Month Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MonthAttendance"
+            android:exported="false"
+            android:label="Month Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".showattendance"
+            android:exported="false"
+            android:label="Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false"
+            android:label="Change Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer"
+            android:exported="false"
+            android:label="Developers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeleteAttendance"
+            android:exported="false"
+            android:label="Delete Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckAttendance"
+            android:exported="false"
+            android:label="Check Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartAttendance"
+            android:exported="false"
+            android:label="Start Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TakeAttendance"
+            android:exported="false"
+            android:label="Take Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincipalAttendanceView"
+            android:exported="false"
+            android:label="Attendance View"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeleteBatch"
+            android:exported="false"
+            android:label="Delete Batch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentRecord"
+            android:exported="false"
+            android:label="Student Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateSemester"
+            android:exported="false"
+            android:label="Update Semester"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeleteStudent"
+            android:exported="false"
+            android:label="Delete Student"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddStudent"
+            android:exported="false"
+            android:label="Add Student"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincipalStudentView"
+            android:exported="false"
+            android:label="Student View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherRecord"
+            android:exported="false"
+            android:label="Teacher Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateTeacher"
+            android:exported="false"
+            android:label="Update Teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeleteTeacher"
+            android:exported="false"
+            android:label="Delete Teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddTeacher"
+            android:exported="false"
+            android:label="Add Teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincipalTeacherView"
+            android:exported="false"
+            android:label="Teacher View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HodRecord"
+            android:exported="false"
+            android:label="HOD Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateHod"
+            android:exported="false"
+            android:label="Update HOD"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeleteHod"
+            android:exported="false"
+            android:label="Delete HOD"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddHod"
+            android:exported="false"
+            android:label="Add HOD"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincilpalHodView"
+            android:exported="false"
+            android:label="HOD View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentView"
+            android:exported="false"
+            android:label="Student View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HODView"
+            android:exported="false"
+            android:label="HOD View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacherView"
+            android:exported="false"
+            android:label="Teacher View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincipleView"
+            android:exported="false"
+            android:label="Principal View "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Attendance Management "
+            android:screenOrientation="portrait"
+            tools:ignore="WrongManifestParent" />
+        <activity
+            android:name=".SelectionDesignation"
+            android:exported="false"
+            android:label="Attendance Management"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpalshScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar"
+            tools:ignore="DuplicateActivity,ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

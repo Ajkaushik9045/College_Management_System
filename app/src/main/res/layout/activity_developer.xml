@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/education"
+    tools:context=".Developer">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittextfile"
+                android:drawableLeft="@drawable/instagram_logo_wine"
+                android:drawablePadding="16dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Anuj Kaushik"
+                android:textColor="#0563C1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernameaj"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/ajay"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittextfile"
+                android:drawableLeft="@drawable/instagram_logo_wine"
+                android:drawablePadding="16dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Ajay Bhardwaj"
+                android:textColor="#0563C1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/usernameaj"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/usernameaj"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:background="@drawable/edittextfile"
+                android:drawableLeft="@drawable/instagram_logo_wine"
+                android:drawablePadding="16dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Ajay kumar"
+                android:textColor="#0563C1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ajay"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

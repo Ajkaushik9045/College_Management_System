@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/education"
+    android:id="@+id/my_drawer_layout"
+    tools:context=".StudentView"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/framecontainter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomnavigation"
+            android:background="@color/white" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemTextColor="@color/black"
+            app:itemRippleColor="@color/black"
+            app:itemIconTint="@color/iconscolor"
+            app:menu="@menu/studentnavigation"
+            app:labelVisibilityMode="labeled" />
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:drawerLayoutCornerSize="20dp"
+        android:background="@color/purple"
+        app:headerLayout="@layout/drawer_header"
+        app:itemTextAppearance="@style/NewFontStyle"
+        app:menu="@menu/studentmenu"
+         />
+</LinearLayout>

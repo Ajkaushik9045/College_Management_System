@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:iconTint="@color/black"
+        />
+<!--    <item-->
+<!--        android:id="@+id/Attendance"-->
+<!--        android:icon="@drawable/baseline_attendance_24"-->
+<!--        android:title="Attendance"-->
+<!--        app:iconTint="@color/black"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/Student"
+        android:icon="@drawable/baseline_add_alert_24"
+        android:title="Notification"
+        app:iconTint="@color/black"
+        />
+    <item
+        android:id="@+id/Result"
+        android:icon="@drawable/baseline_result_24"
+        android:title="Notes"
+        app:iconTint="@color/black"
+        />
+</menu>

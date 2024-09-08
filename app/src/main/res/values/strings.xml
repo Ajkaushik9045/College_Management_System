@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="Select_Dept">
+        <item>Dept</item>
+        <item>Applied</item>
+        <item>Computer</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Electronics</item>
+        <item>Mechanical</item>
+        <item>Plastic</item>
+    </string-array>
+    <string-array name="Select_Department">
+        <item>Branch</item>
+        <item>Computer</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Electronics</item>
+        <item>Mechanical</item>
+        <item>Plastic</item>
+    </string-array>
+
+    <string-array name="select_Semester">
+        <item>Sem</item>
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+
+    </string-array>
+
+    <string-array name="select_Period">
+        <item>Period</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="select_Marks">
+        <item>Marks</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="select_Session">
+        <item>Sessional</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>Class Test </item>
+    </string-array>
+
+
+    <item name="RadioPresentButton" type="id" />
+    <item name="RadioAbsentButton" type="id" />
+    <item name="RadioNSOButton" type="id" />
+    <item name="RadioREButton" type="id" />
+    <string name="PRINCIPAL">PRINCIPAL</string>
+    <string name="HOD">HOD</string>
+    <string name="TEACHER">TEACHER</string>
+    <string name="STUDENT">STUDENT</string>
+    <string name="DEVELOPERS">DEVELOPERS</string>
+    <string name="login">LOGIN</string>
+    <string name="record">Record</string>
+    <string name="Attendnce">Attendance</string>
+    <string name="Add">Add</string>
+    <string name="DELETE">Delete</string>
+    <string name="UPDATE">Update</string>
+
+    <string name="contentdes">There is logo of  CR polytechnic</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+    <string name="nav_open" />
+    <string name="nav_close" />
+    <string name="textview">
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_attendance">Take Attendance</string>
+    <string name="nso_student">NSO Student</string>
+    <string name="check_attendance">Check Attendance</string>
+    <string name="delete_attendance">Delete Attendance</string>
+
+</resources>

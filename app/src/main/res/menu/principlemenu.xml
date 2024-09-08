@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ADDHOD"
+        android:orderInCategory="100"
+        android:title="Add HOD"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ADDTEACHER"
+        android:orderInCategory="100"
+        android:title="Add Teacher"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ADDStudent"
+        android:orderInCategory="100"
+        android:title="Add Student"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/TAKEATTENDANCE"
+        android:orderInCategory="100"
+        android:title="Take Attendance"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/MonthAttendance"
+        android:orderInCategory="100"
+        android:title="Month Attendance"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/updateSemester"
+        android:orderInCategory="100"
+        android:title="Update Semester"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Developers"
+        android:orderInCategory="100"
+        android:title="Developers"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ChangePassword"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never"
+        />
+
+
+
+
+
+
+</menu>

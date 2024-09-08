@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/education"
+    tools:context=".DeleteSubject">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:gravity="bottom|start|left"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/SaveButton"
+                    app:layout_constraintEnd_toStartOf="@+id/EditStudentNameField"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/EditStudentNameField"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:gravity="bottom|start|left"
+                    android:hint="Subject Name"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/SaveButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <Button
+                    android:id="@+id/SaveButton"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:backgroundTint="@color/purple"
+                    android:text="@string/DELETE"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="top|start|left"
+                android:paddingTop="3dp"
+                android:text="Code"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/Searchs"
+                app:layout_constraintEnd_toStartOf="@+id/EditStudentRollField"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="start|top|left"
+                android:paddingTop="10dp"
+                android:text="Branch"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView9"
+                app:layout_constraintEnd_toStartOf="@+id/Branchspinner"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="top|start|left"
+                android:paddingTop="10dp"
+                android:text="Semester"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView7"
+                app:layout_constraintEnd_toStartOf="@+id/Semesterspinner"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+            <EditText
+                android:id="@+id/EditStudentRollField"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="Subject Code"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/Searchs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/Semesterspinner"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+            <Button
+                android:id="@+id/Searchs"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="@color/purple"
+                android:text="Search"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditStudentRollField"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <Spinner
+                android:id="@+id/Branchspinner"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/Semesterspinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <Spinner
+                android:id="@+id/Semesterspinner"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/EditStudentRollField"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/Branchspinner"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

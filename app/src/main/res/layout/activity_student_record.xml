@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/education"
+    android:orientation="vertical"
+    tools:context=".StudentRecord">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <Spinner
+                android:id="@+id/spinnerBranch"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/searchs"
+                app:layout_constraintEnd_toStartOf="@+id/spinnerStud"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <Spinner
+                android:id="@+id/spinnerStud"
+
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                app:layout_constraintBottom_toTopOf="@+id/searchs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/spinnerBranch"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <Button
+                android:id="@+id/searchs"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple"
+                android:text="Search"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/Studentlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:stretchColumns="*">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/Vie"
+                            android:padding="8dp"
+                            android:text="SNo."
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ViewName"
+                            android:padding="8dp"
+                            android:text="Roll No."
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ViewBranch"
+                            android:padding="8dp"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/ViewID"-->
+                        <!--                            android:padding="8dp"-->
+                        <!--                            android:text="Branch"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textStyle="bold" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/Semester"-->
+                        <!--                            android:padding="8dp"-->
+                        <!--                            android:text="Semester"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/NSO"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:text="NSO"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold" />-->
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/search"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_margin="0dp"-->
+
+    <!--        android:backgroundTint="@color/purple"-->
+    <!--        android:text="Save"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:cornerRadius="20dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.494"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/cardView2"-->
+    <!--        app:layout_constraintVertical_bias="0.5" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
